@@ -19,7 +19,7 @@
 
 - name: Installing CoovaChilli for RadiusDesk (RHEL/CentOS 6+)
   yum:
-    name="coova-chilli-1.4.0*"
+    name="coova-chilli"
     state=present
     disable_gpg_check=yes
 
