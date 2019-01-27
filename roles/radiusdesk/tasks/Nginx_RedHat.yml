@@ -31,7 +31,12 @@
 
 - name: Installing MySQL Community Repo for RadiusDesk (RHEL/CentOS 6+)
   yum:
-    name: "http://repo.mysql.com/mysql-community-release-el{{ ansible_distribution_major_version }}.rpm"
+    name: "http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm"
+    state: installed
+
+- name: Installing Lux-Release Repo (RHEL/CentOS 6+)
+  yum:
+    name: "http://repo.iotti.biz/CentOS/7/noarch/lux-release-7-1.noarch.rpm"
     state: installed
 
 - name: Installing Nginx (RHEL/CentOS 6+)
