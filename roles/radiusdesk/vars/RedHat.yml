@@ -37,6 +37,7 @@ rd_php5_pkgs:
  - php-xml
  - php-mbstring
  - php-mcrypt
+ - phpmyadmin
 
 # RadiusDesk PHP7 Packages (RHEL/CentOS 6+)
 rd_php7_pkgs: null
