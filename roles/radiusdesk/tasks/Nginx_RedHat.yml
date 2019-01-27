@@ -110,6 +110,9 @@
 - name: Downloading RadiusDesk Login Source from Subversion (RHEL/CentOS 6+)
   shell: svn checkout -r {{ rd_svn_revision }} {{ rd_login_svn_repo }} {{ temp_src_dir }}/login
 
+- name: Downloading Dynamic Login Pages Subversion (RHEL/CentOS 6+)
+  shell: svn checkout http://svn.code.sf.net/p/radiusdesk/code/trunk/rd_login /usr/share/nginx/html
+  
 - name: Copying RadiusDesk Login Source webroot (RHEL/CentOS 6+)
   shell: cp -a {{ temp_src_dir | quote }}/login {{ nginx_webroot | quote }}/
 
