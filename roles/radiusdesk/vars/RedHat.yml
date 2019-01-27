@@ -25,6 +25,7 @@ rd_pkgs:
 
 # RadiusDesk PHP5 Packages (RHEL/CentOS 6+)
 rd_php5_pkgs:
+ - php
  - php-fpm
  - php-pear
  - php-gd
