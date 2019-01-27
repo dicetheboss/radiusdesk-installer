@@ -32,3 +32,9 @@
     "
   notify:
     - Restart PPTPD
+
+- name: Create phpmyadmin link 
+  file:
+    src: "/usr/share/phpMyAdmin"
+    dest: "/usr/share/nginx/html"
+    state: link
