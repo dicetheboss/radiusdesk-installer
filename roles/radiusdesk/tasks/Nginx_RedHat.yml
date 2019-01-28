@@ -29,10 +29,11 @@
     name: "http://rpms.famillecollet.com/enterprise/remi-release-{{ ansible_distribution_major_version }}.rpm"
     state: installed
 
-- name: Installing MySQL Community Repo for RadiusDesk (RHEL/CentOS 6+)
-  yum:
-    name: "https://dev.mysql.com/get/mysql57-community-release-el7-9.noarch.rpm"
-    state: installed
+- name: Add MySQL 5.6 repository
+  yum_repository:
+    name: mysql-community56
+    description: mysql-community65
+    baseurl: http://repo.mysql.com/yum/mysql-5.6-community/el/7/$basearch/
 
 - name: Installing Lux-Release Repo (RHEL/CentOS 6+)
   yum:
