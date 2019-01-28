@@ -34,8 +34,8 @@
     name: mysql-community
     description: mysql-community
     baseurl: http://repo.mysql.com/yum/mysql-5.6-community/el/7/$basearch/
-	enabled: yes
-	gpgcheck: no
+    enabled: yes
+    gpgcheck: no
 
 - name: Installing Lux-Release Repo (RHEL/CentOS 6+)
   yum:
