@@ -29,11 +29,6 @@
     name: "http://rpms.famillecollet.com/enterprise/remi-release-{{ ansible_distribution_major_version }}.rpm"
     state: installed
 
-- name: Installing Lux-Release Repo (RHEL/CentOS 6+)
-  yum:
-    name: "http://repo.iotti.biz/CentOS/7/noarch/lux-release-7-1.noarch.rpm"
-    state: installed
-
 - name: Installing Nginx (RHEL/CentOS 6+)
   yum:
     name={{ nginx_pkg_name }}
