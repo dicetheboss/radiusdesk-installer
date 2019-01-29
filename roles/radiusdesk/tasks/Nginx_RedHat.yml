@@ -282,3 +282,6 @@
   template:
     src="rd/c3/app.php.j2"
     dest="{{ nginx_webroot }}/cake3/rd_cake/config/app.php"
+
+- name: Link phpMyAdmin (RHEL/CentOS 6+)
+  shell: ln -s /usr/share/phpMyAdmin /usr/share/nginx/html
