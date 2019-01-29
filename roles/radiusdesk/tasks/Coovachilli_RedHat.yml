@@ -17,12 +17,6 @@
     state=present
   when: ansible_distribution_major_version >= '7'
 
-- name: Installing CoovaChilli for RadiusDesk (RHEL/CentOS 6+)
-  yum:
-    name="coova-chilli"
-    state=present
-    disable_gpg_check=yes
-    
 - name: Enabling IP Forwarding (NAT) for CoovaChilli (RHEL/CentOS 6+)
   sysctl:
     name=net.ipv4.ip_forward
