@@ -29,14 +29,6 @@
     name: "http://rpms.famillecollet.com/enterprise/remi-release-{{ ansible_distribution_major_version }}.rpm"
     state: installed
 
-- name: Add MySQL 5.6 repository
-  yum_repository:
-    name: mysql-community
-    description: mysql-community
-    baseurl: http://repo.mysql.com/yum/mysql-5.6-community/el/7/$basearch/
-    enabled: yes
-    gpgcheck: no
-
 - name: Installing Lux-Release Repo (RHEL/CentOS 6+)
   yum:
     name: "http://repo.iotti.biz/CentOS/7/noarch/lux-release-7-1.noarch.rpm"
